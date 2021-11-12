@@ -1,0 +1,451 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.logo{
+    font-size:30px;
+    border: 3px solid rgb(132, 228, 245);
+    border-radius: 50%; 
+    padding: 5px;
+    width:0;
+    text-decoration: underline;
+}
+.items{
+    font-family: 'Nanum Myeongjo', serif;
+    float:right;
+    margin-right: 20px;
+}
+.items li{
+    display:inline-block;
+    margin:0px 12px;
+}
+.items li a{
+    list-style:none;
+    text-decoration: none;
+    color:black;
+    font-size:30px;
+}
+.items li a:hover{
+    padding: 4px;
+    background-color: rgb(192, 222, 248);
+    font-size:40px;
+    transition: 2s;
+}
+.items li a.active{
+    padding: 4px;
+    text-decoration: underline;
+    color: rgb(11 132 235);
+    font-size:20px;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+header{
+    display:flex;
+    /*justify-content: space-between;*/
+    padding:10px 10px;
+    /*margin:5px 5px;*/
+    color:black;
+    background-color: #4a4b4b;
+}
+#home p{
+    font-family:'Akaya Telivigala', cursive;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 20px 20px;
+    padding: 30px 20px 20px 20px;
+    font-size: 30px;
+    width:30%;
+    height:450px;
+    background-color:rgb(192, 222, 248,0.507) ;
+    backdrop-filter: blur(8px);
+    position:relative;
+    top:38%;
+    left:42%;
+}
+#home img{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 450px;
+    position:absolute;
+    left:20%;
+}
+#home{
+    height: 800px;
+    background-color:rgb(227 250 253);
+    /*justify-content:space-between;*/
+}
+#about{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+   /* border:2px solid black;*/
+    height: 2200px;
+    /*background-color: #9cb2b8;*/
+    background-color:#4a4b4b;
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+    z-index: 12;
+}
+.head{
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 20px;
+    font-size: 30px;
+    border-radius: 10%;
+    background-color: #ad62ae;
+    opacity: 0.3;
+    color: #010101;
+    text-decoration: overline;
+}
+.carousel-inner{
+    height:500px;
+    
+   /* border: 2px solid red;*/
+    margin:40px 10px;
+    box-shadow: -1px -1px 10px 5px  #031616;
+}
+.carousel img
+{
+    position: relative;
+    width: 1075px;
+    height:600px;
+    z-index: 1;
+}
+.carousel-caption{
+    top: 0;
+    position:absolute;
+    z-index: 2;
+}
+.carousel-caption  h5{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 40px;
+    text-align: center;
+    text-decoration:underline ;
+    margin-top: 20px;
+    color: #180a00;
+}
+.carousel-caption  p{
+    font-family:'Akaya Telivigala', cursive;
+    font-size: 30px;
+    background-color:rgb(110 86 86 / 40%);
+    padding:20px;
+    border-radius: 2%;
+    text-align: center;
+    margin-top: 40px;
+    color: #180a00;
+}
+.skills{
+    height:auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.skills div{
+   /* border: 2px solid red;*/
+    margin:5px;
+    flex:1 1;
+}
+.skills-p{
+    width:50%;
+    padding:40px 20px 20px 20px;
+    transition: 1s;
+}
+.skills p{
+    font-family:'Akaya Telivigala', cursive;
+    font-size: 40px;
+    color: blanchedalmond;
+    text-align: center;
+    background-color:rgb(110 86 86 / 40%);
+}
+.chart{
+    width:50%;
+}
+.Achievments{
+    /*border:2px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    margin:20px;
+    height:650px;
+    width:100%;
+    color: #180a00;
+}
+.list{
+    border: 2px solid #ff00001c;
+    font-size: 30px;
+    margin-top: 15%;
+    padding: 2%;
+    display: inline-block;
+    border-radius: 10%;
+    width: 50%;
+    height: 400px;
+    position: relative;
+    background-color: #fcf3d8;
+    opacity: 0.8;
+}
+.list li{
+    list-style: none;
+    margin: 20px;
+    text-align: center;
+    color:#241102;
+    font-family:'Akaya Telivigala', cursive;
+}
+.Achievments div{
+    border:2px solid #e43500;
+    margin:10px;
+    position: absolute;
+    right:7%;
+    height: 300px;
+    width:400px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color:#b0371c;
+    opacity: 0.56;
+}
+.Achievments span{
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    font-size: 50px;
+    display: inline-block;
+    margin-top: 20%;
+}
+#contact{
+    width:100%;
+    height:auto;
+    display: flex;
+   /* border:2px solid black;*/
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    background-color: rgb(202 242 248);
+
+}
+.address{
+    /*border:2px solid black;*/
+    margin:20px;
+    padding: 20px;
+    width:40%;
+}
+.address p{
+    font-size: 25px;
+    font-family:'Akaya Telivigala', cursive;
+}
+.social {
+    margin-left:40%;
+    margin-top: 20%;
+    display:inline-block;
+}
+.social li{
+    display:inline-block;
+    margin:2px;
+    padding: 2px;
+}
+.linkedin{
+   font-size: 40px;
+   padding: 8px;
+   color:black;}
+.github{
+    font-size: 40px;
+    padding: 8px;
+    color:black;
+}
+.instagram{
+    font-size: 40px;
+    padding: 8px;
+    color:black;
+}
+.linkedin :hover{
+  color: rgb(53, 164, 255);
+  font-size: 50px;
+  transition-duration:40ms;
+}
+.github :hover{
+   color:rgb(133, 98, 3);
+   font-size: 50px;
+   transition-duration:40ms;
+
+}
+.instagram :hover{
+   color:rgb(250, 6, 107);
+   font-size: 50px;
+   transition-duration:40ms;
+}
+.comment{
+    margin:20px;
+    padding: 20px;
+    font-size: 30px;  
+    width:40%; 
+}
+.comment h4{
+    font-family:'Akaya Telivigala', cursive;
+    margin: 4px 4px;
+}
+#feedback{
+    font-family: 'Nanum Myeongjo', serif;
+    margin: 20px;
+    padding: 5px;
+    background-color: rgb(201,218,218,0.5);
+    text-align: center;
+    border: 2px solid #023939;
+}
+#feedback div{
+    margin-top:10px;
+}
+#feedback input{
+    text-align: center;
+    margin-left: 30px;
+    height: 40px;
+    width: 250px;
+}
+.submit input{
+    border-radius: 10%;
+    margin:5px;
+}
+.submit input:hover{
+    background-color:#4a4b4b;
+    color:aliceblue;
+    font-size: 20px;
+}
+@media (min-width:0px) and (max-width:767px){
+    
+    .d-md-block .d-block{
+        display: block!important;
+    }
+
+    .list{
+        width:100%;
+    }
+    .Achievments div{
+        border: 2px solid #e43500;
+        margin: 10px;
+        position: absolute;
+        height: 100px;
+        width: 80%;
+        border-radius: 10%;
+        background-color: #b0371c;
+        opacity: 0.56;
+    }
+    .Achievments span{
+        margin:0px 12px;
+    }
+    .skills div{
+        width:100%;
+    }
+    .skills p{
+        font-size: 20px;
+    }
+    .address{
+        width:100%;
+    }
+    .comment{
+        width:100%;
+    }
+
+}
+@media (min-width:768px) and (max-width:1200px)
+{
+    #feedback{
+       width: 100%; 
+    }
+    #feedback input{
+        width: 200px;
+    }
+    .social{
+        margin-left: 0;
+    }
+    .list{
+        width:80%;
+    }
+    .Achievments div{
+        right:1%;
+        height:250px;
+    }
+    #home p{
+        width:50%;
+        height: auto;
+    }
+}
+@media (min-width:0px) and (max-width:623px)
+{
+   .list li{
+        font-size: 20px;
+    }
+    .Achievments span{
+      font-size: 40px ;
+    }
+    #home img{
+        left:10%;
+        margin-left: 0;
+    }
+    #home p{
+        width:50%;
+        padding:20px;
+        font-size:20px ;
+    }
+}
+
+@media (min-width:624px) and (max-width:767px)
+{
+    #home p{
+        width:50%;
+        padding:20px;
+        font-size:28px ;
+    }
+}
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      margin-right: 50px;
+    }
+    .items li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+
+    .items{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 10;
+    }
+    .items li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    .items li a{
+      font-size: 20px;
+    }
+    .items li a:hover{
+        padding: 4px;
+        background-color: rgb(192, 222, 248);
+        font-size:40px;
+        transition: 2s;
+    }
+    .items li a.active{
+        padding: 4px;
+        text-decoration: underline;
+        color: rgb(11 132 235);
+        font-size:20px;
+    }
+    #check:checked ~ .items{
+      left: 0;
+    }
+  }
